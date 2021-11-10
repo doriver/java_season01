@@ -15,6 +15,6 @@ public class Rectangle {
 	}
 	
 	void printRectangle() {
-		System.out.println("°¡·Î±æÀÌ" + width + ", ¼¼·Î±æÀÌ" + height);
+		System.out.println("ê°€ë¡œ" + width + ", ë†’ì´" + height);
 	}
 }

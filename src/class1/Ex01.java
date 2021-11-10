@@ -5,7 +5,7 @@ public class Ex01 {
 		
 		ScoreData scoreData = new ScoreData();
 		
-		scoreData.name = "±¹¾î";
+		scoreData.name = "êµ­ì–´";
 		scoreData.score = 80;
 		scoreData.ranking = 10;
 		
@@ -18,13 +18,13 @@ public class Ex01 {
 		//
 		
 		Student firstStudent = new Student();
-		firstStudent.name = "À¯Àç¼®";
+		firstStudent.name = "ì¥ë™ê±´";
 		firstStudent.className = "java";
 		firstStudent.age = 23;
 		firstStudent.phoneNumber = "0102913123";
 		
 		Student secondStudent = new Student();
-		secondStudent.name = "±èÁ¾±¹";
+		secondStudent.name = "ê³ ì†Œì˜";
 		secondStudent.className = "java";
 		secondStudent.age = 17;
 		secondStudent.phoneNumber = "0102938844";

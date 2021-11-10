@@ -6,7 +6,7 @@ public class Ex02 {
 		// TODO Auto-generated method stub
 		Rectangle rectangle = new Rectangle();
 		
-		rectangle.printRectangle(); // °¡·Î±æÀÌ0, ¼¼·Î±æÀÌ0
+		rectangle.printRectangle(); // ê°€ë¡œ0, ë†’ì´0
 		System.out.println(rectangle.calculateArea()); // 0
 		
 		rectangle.width = 10;
@@ -17,15 +17,15 @@ public class Ex02 {
 		System.out.println(rectangle.calculateArea(5));
 
 		Rectangle rect1 = rectangle;
-		rect1.printRectangle(); // °¡·Î±æÀÌ10, ¼¼·Î±æÀÌ8
+		rect1.printRectangle(); // ê°€ë¡œ10, ë†’ì´8
 		rect1.width = 30;
 		
-		rect1.printRectangle(); // °¡·Î±æÀÌ30, ¼¼·Î±æÀÌ8
-		rectangle.printRectangle(); // °¡·Î±æÀÌ30, ¼¼·Î±æÀÌ8   ÀÌ°Ô ½Å±â
+		rect1.printRectangle(); // ê°€ë¡œ30, ë†’ì´8
+		rectangle.printRectangle(); // ê°€ë¡œ30, ë†’ì´8   ì™œê·¸ëŸ°ê±°ëƒ
 		
 		rect1 = new Rectangle();
-		rect1.printRectangle(); // °¡·Î±æÀÌ0, ¼¼·Î±æÀÌ0
-		rectangle.printRectangle(); // °¡·Î±æÀÌ30, ¼¼·Î±æÀÌ8
+		rect1.printRectangle(); // ê°€ë¡œ0, ë†’ì´0
+		rectangle.printRectangle(); // ê°€ë¡œ30, ë†’ì´8
 		
 		
 		Rectangle[] rectangles = new Rectangle[100];
@@ -33,23 +33,23 @@ public class Ex02 {
 			rectangles[i] = new Rectangle();
 		}
 		
-		rectangles[30].printRectangle(); // °¡·Î±æÀÌ0, ¼¼·Î±æÀÌ0
+		rectangles[30].printRectangle(); // ê°€ë¡œ0, ë†’ì´0
 
 		System.out.println();
 		
 		//
 		
 		Goods shrimGgang = new Goods();
-		shrimGgang.name = "»õ¿ì±ø";
+		shrimGgang.name = "ìƒˆìš°ê¹¡";
 		shrimGgang.price = 1300;
 		shrimGgang.expiration = "2021-03-02";
 		
-		System.out.println("Á¦Ç° 5°³ÀÇ °¡°İ : " + shrimGgang.calculationPrice(5));
+		System.out.println("ì œí’ˆ 5ê°œì˜ ê°€ê²© : " + shrimGgang.calculationPrice(5));
 		
 		if (shrimGgang.availableSale("2020-09-28")) {
-			System.out.println("ÆÇ¸Å°¡´É");
+			System.out.println("íŒë§¤ê°€ëŠ¥");
 		} else {
-			System.out.println("ÆÇ¸ÅºÒ°¡");
+			System.out.println("íŒë§¤ë¶ˆê°€");
 		}
 		
 		//
