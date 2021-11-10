@@ -1,4 +1,4 @@
-package class1;
+package class_1;
 
 public class Ex02 {
 
@@ -51,8 +51,6 @@ public class Ex02 {
 		} else {
 			System.out.println("판매불가");
 		}
-		
-		//
 		
 		
 	}

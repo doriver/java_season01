@@ -1,4 +1,4 @@
-package class1;
+package class_1;
 
 public class Goods {
 
