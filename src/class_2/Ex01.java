@@ -17,6 +17,16 @@ public class Ex01 {
 		kim.setName("신또깡");
 		System.out.println(kim.getName());
 		
+		System.out.println();
+		
+		//
+		
+		Goods shrimGgang = new Goods("새우깡", 1300, "2021-03-02");
+		shrimGgang.info();
+		
+		System.out.println("제품 5개의 가격 : " + shrimGgang.calculatePrice(5));
+		
+		
 	}
 
 }
