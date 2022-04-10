@@ -3,6 +3,7 @@ package inheritance;
 // Person은 부모클래스 , Student는 자식클래스
 // Student : Person을 확장해서 만든 클래스
 public class Student extends Person{
+	
 	private String school;
 	
 	public Student() {
@@ -18,6 +19,12 @@ public class Student extends Person{
 	}
 	
 	public void printInfo() {
+		super.introduce();
+//		System.out.println(name + gender + age + "입니다");
+		System.out.println(school + "다니는중");
+	}
+
+	public void introduce() {
 		super.introduce();
 //		System.out.println(name + gender + age + "입니다");
 		System.out.println(school + "다니는중");

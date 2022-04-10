@@ -7,6 +7,12 @@ public class Note01 {
 		System.out.println(1234 % 10); // 4 , 10으로 나눈 나머지
 		System.out.println(1234 / 10); // 123 , 10으로 나눈 몫
 		
+		
+		int[] sdf = {1,2,3};
+		
+		System.out.println(sdf[0]);
+		
+		
 	}
 
 }

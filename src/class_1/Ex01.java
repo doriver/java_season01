@@ -3,7 +3,13 @@ package class_1;
 public class Ex01 {
 	public static void main(String[] args) {
 		
-		ScoreData scoreData = new ScoreData();
+		
+		// ScoreData클래스 타입의 참조변수
+		ScoreData scoreData; // (클래스의 객체를 참조하기 위한)참조변수를 선언
+		scoreData = new ScoreData(); // 클래스의 객체를 생성후, 객체의 주소를 참조변수에 저장
+
+//		참조변수의 타입               객체의 타입
+//		ScoreData scoreData = new ScoreData();
 		
 		scoreData.name = "국어";
 		scoreData.score = 80;

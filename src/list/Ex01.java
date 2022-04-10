@@ -50,7 +50,7 @@ public class Ex01 {
 			if (element.startsWith("b")) {
 				stringList.remove(element);
 			}
-		} //  apple bear    .. 이것도 위에꺼랑 비슷하게 되네
+		} //  apple bear    .. 이것도 위에꺼랑 비슷하게 되네 ..  0번쨰, 1번째 원소를 지칭하는듯?
 		System.out.println();
 		
 		System.out.println(stringList); // [apple, chair]
