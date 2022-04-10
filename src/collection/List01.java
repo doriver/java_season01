@@ -1,30 +1,31 @@
-package list;
+package collection;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ex01 {
+public class List01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+//		List 는 index가 있다
 		ArrayList<Integer> integerList = new ArrayList<Integer>();
 		integerList.add(4);
 		integerList.add(8);
 		System.out.println(integerList); // [4, 8]
 		
-		integerList.add(1, 5);
+		integerList.add(1, 5); // index 1번에 5를 추가
 		System.out.println(integerList); // [4, 5, 8]
-		System.out.println(integerList.get(0)); // 4
+		System.out.println(integerList.get(0)); // 4 (index 0번 값)
 		
-		integerList.set(0, 10);
+		integerList.set(0, 10); // index 0번값을 10으로 바꾼다
 		System.out.println(integerList); // [10, 5, 8]
 		
-		Integer deleteNumber = integerList.remove(0);
+		Integer deleteNumber = integerList.remove(0); // index 0번값을 제거한다. 그에 따라 index가 자동으로 마춰짐, 그리고 제거된 값이 결과값이 됨. 
 		System.out.println(integerList); // [5, 8]
 		System.out.println(deleteNumber); // 10
 		
-		integerList.clear();
+		integerList.clear(); // list의 모든 값을 제거
 		System.out.println(integerList); // []
 		
 		//
@@ -42,7 +43,7 @@ public class Ex01 {
 //			if (element.startsWith("b")) {
 //				stringList.remove(i);
 //			}
-//		} // apple bear         ..  i = 1 일때 stringList.size() 가 2로 바뀜
+//		} // apple bear  ..  i = 1 일때 stringList.size() 가 2로 바뀜 , 그래서 for문에서 i는 1까지밖에 실행이 안되고 chair는 출력 안됨
 		
 		for (String element : stringList) {
 			System.out.print(element + " ");
@@ -50,7 +51,8 @@ public class Ex01 {
 			if (element.startsWith("b")) {
 				stringList.remove(element);
 			}
-		} //  apple bear    .. 이것도 위에꺼랑 비슷하게 되네 ..  0번쨰, 1번째 원소를 지칭하는듯?
+		} 
+//		apple bear .. 이것도 위에꺼랑 비슷하게 되네. bear가 제거되고, chair가 1번째 원소로 되고 list의 마지막 index는 1이 됨. 저런식의 for문도 index기반해서 0번쨰, 1번째 원소를 뽑아서 하는듯?
 		System.out.println();
 		
 		System.out.println(stringList); // [apple, chair]

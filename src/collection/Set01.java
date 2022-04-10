@@ -1,19 +1,19 @@
-package set;
+package collection;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Ex01 {
+public class Set01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 			Set<Integer> set1 = new HashSet<>();
 			// 순서가 없다, index가 없다, 수학의 집합과 같은 특성
 			
-			set1.add(1);
 			set1.add(2);
 			set1.add(4);
+			set1.add(1);
 			
 			System.out.println(set1); // [1, 2, 4]
 			
@@ -39,7 +39,10 @@ public class Ex01 {
 			set1.removeAll(set2);
 			System.out.println(set1); // [1, 2, 10] 차집합인듯
 			
+		
 			Set<Integer> set3 = new TreeSet<>();
+//			값을 정렬한다.
+//			HashSet보다 상대적으로 느리다.
 			set3.add(3);
 			set3.add(2);
 			set3.add(1);
@@ -51,6 +54,7 @@ public class Ex01 {
 			for (Integer number : set3) {
 				System.out.println(number);
 			}
+			// 1 2 3
 
 	}
 
