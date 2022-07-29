@@ -1,4 +1,4 @@
-package chapter6_oop1;
+package chapter06.object_oriented_programming_1;
 
 // 하나의 소스파일( *.java )에 둘 이상의 클래스를 정의하는것도 가능하다. 
 // 소스파일 이름은 public class의 이름과 일치해야 한다

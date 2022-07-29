@@ -1,4 +1,4 @@
-package chapter2_variable;
+package chapter02.variable;
 
 public class Content01 {
 
