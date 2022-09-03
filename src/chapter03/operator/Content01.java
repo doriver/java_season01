@@ -32,7 +32,32 @@ public class Content01 {
 		
 		System.out.println(13 / 4 + " , " + 13 % 4); // 3(나눈 몫) , 1(나눈 나머지)
 		System.out.println(13 / 5 + " , " + 13 % 5); // 2 , 3
+		System.out.println(7 / 2 + " , " + 7 / (double)2 + " , " + 7 / 2.0 ); // 3 , 3.5 , 3.5
+		System.out.println(Math.round(4.54) + " , " +  Math.round(4.13592 * 100) / 100.0);
+		// 5(소수 첫째자리에서 반올림) , 4.14(소수 셋째자리에서 반올림, 다른자리에서 반올림 하기위해 10의 n제곱을 곱하고 나눠줌)
 		
+		System.out.println("abc" == "abc"); // true
+		System.out.println("abc".equals("abc")); // true
+		
+		System.out.println();
+		
+		String str = new String("abc");
+//		String str = "abc"; 위 문장을 간단히 표현
+		System.out.println(str); // abc
+		System.out.println(str == "abc"); // false
+		System.out.println(str.equals("abc")); // true
+		
+		System.out.println();
+		
+		String str1 = "abc";
+		System.out.println(str1); // abc
+		System.out.println(str1 == "abc"); // true
+		System.out.println(str1.equals("abc")); // true
+		
+		System.out.println();
+		// '=='는 완전히 같은지 비교 , equals()는 내용이 같은지 비교
+		System.out.println(str == str1); // false
+		System.out.println(str.equals(str1)); // true
 		
 	}
 
