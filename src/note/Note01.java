@@ -7,10 +7,16 @@ public class Note01 {
 		System.out.println(1234 % 10); // 4 , 10으로 나눈 나머지
 		System.out.println(1234 / 10); // 123 , 10으로 나눈 몫
 		
+		// 두 변수 값 바꾸기
+		int x = 10;
+		int y = 20;
+		int tmp;
 		
-		int[] sdf = {1,2,3};
+		tmp = x;
+		x = y;
+		y = tmp;
+		System.out.println(x + " , " + y); // 20 , 10
 		
-		System.out.println(sdf[0]);
 		
 		
 	}
