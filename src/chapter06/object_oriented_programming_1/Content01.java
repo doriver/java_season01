@@ -15,6 +15,8 @@ public class Content01 {
 		t.channel = 7;
 		t.channelDown();
 		System.out.println("현재 채널은 " + t.channel + " 입니다");
+		
+		System.out.println(t); // chapter06.object_oriented_programming_1.Tv@7637f22
 	}
 	
 }
