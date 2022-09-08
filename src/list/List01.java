@@ -59,8 +59,8 @@ public class List01 {
 			if (element.startsWith("b")) {
 				stringList.remove(element);
 			}
-		} 
-//		apple bear .. 이것도 위에꺼랑 비슷하게 되네. bear가 제거되고, chair가 1번째 원소로 되고 list의 마지막 index는 1이 됨. 저런식의 for문도 index기반해서 0번쨰, 1번째 원소를 뽑아서 하는듯?
+		} // apple bear .. 이것도 위에꺼랑 비슷하게 되네. bear가 제거되고, chair가 1번째 원소로 되고 list의 마지막 index는 1이 됨. 저런식의 for문도 index기반해서 0번쨰, 1번째 원소를 뽑아서 하는듯?
+		
 		System.out.println();
 		
 		System.out.println(stringList); // [apple, chair]
