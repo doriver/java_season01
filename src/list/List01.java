@@ -1,4 +1,4 @@
-package collection;
+package list;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,13 +7,14 @@ public class List01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-//	 	List
-//	 	index가 있다
-//		배열과 같이 같은 타입의 여러 개의 자료를 저장하는 자료구조.
-//		배열이 가진 메모리 낭비와 삽입 삭제의 불편함을 개선하였다.
-		
-		
+/*
+ *List
+	index가 있다
+	배열과 같이 같은 타입의 여러 개의 자료를 저장하는 자료구조.
+	배열이 가진 메모리 낭비와 삽입 삭제의 불편함을 개선하였다.
+ */
+	 	
+			
 		ArrayList<Integer> integerList = new ArrayList<Integer>();
 		integerList.add(4);
 		integerList.add(8);
