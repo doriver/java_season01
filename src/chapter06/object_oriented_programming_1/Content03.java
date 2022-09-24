@@ -25,3 +25,33 @@ public class Content03 {
 		System.out.println(mm.add() + " , " + mm.divide()); // 250 , 4.0
 	}
 }
+
+class TestClass {
+	void instanceMethod() {} // 인스턴스 메서드
+	static void staticMethod() {} // 클래스 메서드
+	
+	void instanceMethod2() {
+		instanceMethod(); //
+		staticMethod();
+	}
+	
+	static void staticMethod2() {
+//		instanceMethod(); // 에러 , 같은 클래스 내에서 static메서드는 인스턴스메서드를 호출할수 없다
+		staticMethod();
+	}
+}
+
+class TestClass2 {
+	int iv; // 인스턴스 변수
+	static int cv; // 클래스 변수
+	
+	void instanceMethod() {
+		System.out.println(iv);
+		System.out.println(cv);
+	}
+	
+	static void staticMethod() {
+//		System.out.println(iv); // 에러 , 같은 클래스 내에서 static메서드는 인스턴스변수를 사용할수 없다
+		System.out.println(cv);
+	}
+}
