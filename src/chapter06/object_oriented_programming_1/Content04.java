@@ -77,6 +77,7 @@ class Car {
 	
 //	Car(String c, String g, int d) {
 //		color = c;
+//  //인스턴스변수 생성자의 매개변수 
 //		gearType = g;
 //		door = d;
 //	}
