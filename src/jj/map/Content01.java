@@ -61,7 +61,7 @@ public class Content01 {
 		ids.putAll(newMap); // ids에 newMap을 집어늠
 		System.out.println(ids); // {je=씨, yu=재석, lee=효리} 이병헌 없어지고 이효리만 남음
 		
-		for (String id : ids.keySet()) {
+		for (String id : ids.keySet()) { // key를 통한 향상된 for문
 			System.out.println(ids.get(id));
 		} // 씨 재석 효리
 
