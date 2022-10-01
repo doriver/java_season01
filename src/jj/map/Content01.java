@@ -15,6 +15,8 @@ public class Content01 {
 //		key는 중복 될 수 없고, value는 중복 가능하다.
 //		key를 통해서값을 찾는 속도가 빠르다.
 //		value를 통해서 key 찾는 작업은 느리다.
+		
+//		.put()  .get()  .containsKey()  .containsValue()  .keySet()   .values()  .remove()  .putAll()
 		Map<String, String> ids = new HashMap<>();
 
 //		[인터페이스Map 타입의 참조변수].put(key, value);

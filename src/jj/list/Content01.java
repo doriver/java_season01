@@ -13,7 +13,11 @@ public class Content01 {
 			배열이 가진 메모리 낭비와 삽입 삭제의 불편함을 개선하였다.
 		 */
 			 	
-					
+		/*
+		 * ArrayList<E>에 값 넣기 , 특정 index에 값 추가,삭제(이때 index가 하나씩 밀리고 당겨진다)
+		 *  ~.add()  ,  ~.get()  ,  ~.set()  ,  ~.remove()  ,  ~.clear()			
+		 */
+		
 		ArrayList<Integer> integerList = new ArrayList<Integer>();
 		integerList.add(4);
 		integerList.add(8);
@@ -64,6 +68,48 @@ public class Content01 {
 		
 		System.out.println(stringList); // [apple, chair]
 
+		
+		/*
+		 * ArrayList<내가 만든 객체?>로 data들 관리하기
+		 */
+		
+		List<Product> pList = new ArrayList<>();
+		
+		Product product = new Product("나초", 1000, 140);
+		pList.add(product);
+//		System.out.println(product);
+		
+		product = new Product("포카리", 1200, 55);
+		pList.add(product);
+		
+		pList.add(new Product("햄", 1400, 60));
+		pList.add(new Product("치즈", 500, 0));
+		
+		System.out.println(pList);
+		// [(나초가격 : 1000, 재고 : 140), (포카리가격 : 1200, 재고 : 55), (햄가격 : 1400, 재고 : 60), (치즈가격 : 500, 재고 : 0)]
+
+		// 재고개수 업데이트, 나초 10개 팔림
+		for (int i = 0; i < pList.size(); i++) {
+			if ( pList.get(i).getName() == "나초") {
+				int stock = pList.get(i).getStock() - 10;
+				pList.get(i).setStock(stock);
+			}
+		}
+		System.out.println(pList);
+//		if ( pList.get(0).getName() == "나초" ) {
+//			int stock = pList.get(0).getStock() - 10;
+//			pList.get(0).setStock(stock);
+//		}
+		
+		// 재고 적은거 주문하려함, 재고 57개 이하인 상품정보
+		for (int i = 0; i < pList.size(); i++) {
+			if ( pList.get(i).getStock() <= 57 ) {
+				System.out.println(pList.get(i));
+			}
+		}
+//		if ( pList.get(0).getStock() <= 57 ) {
+//			System.out.println(pList.get(0));
+//		}
 	}
 
 }

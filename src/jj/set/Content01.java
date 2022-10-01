@@ -6,8 +6,27 @@ import java.util.TreeSet;
 
 public class Content01 {
 	public static void main(String[] args) {
+
+		/* 
+		 * Set<E>
+		 * 중복되는 값 허용x , 순서가 없다 , index가 없다 , 수학의 집합과 같은 특성
+		 */
+		
+		/*
+		 * 값넣기  ,  합집합  ,   교집합     ,    차집합
+		 * .add()  .addAll()  .retainAll()   .removeAll()   
+		 * 
+		 * .contains()   .remove()
+		 * 
+		 * HashSet<E> 
+		 * 일반적으로는 HashSet을 사용
+		 * 
+		 * TreeSet<E>
+		 * 값을 정렬한다.
+		 * HashSet보다 상대적으로 느리다.
+		 */
+		
 		Set<Integer> set1 = new HashSet<>();
-		// 순서가 없다, index가 없다, 수학의 집합과 같은 특성
 		
 		set1.add(2);
 		set1.add(4);
