@@ -1,6 +1,7 @@
 package codingTest;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -48,6 +49,7 @@ class Solution_1 {
  * c를 구하는 문제
  */
 class Solution_2 {
+	
 	/*
 	 * String배열도 Arrays.sort(); 되는지 몰랐음
 	 */
@@ -73,9 +75,32 @@ class Solution_2 {
     }
     
     /*
-     * 효율성에서 잘못된 풀이(배열 원소가 1000개 넘어가는 경우 )
+     * ~.getOrDefault(key, defaultValue)
+     * 내가 생각하지 못했던 방법
      */
     public String solution02(String[] participant, String[] completion) {
+        String answer = "";
+        
+        HashMap<String, Integer> hm = new HashMap<>();
+        for (String player : participant) {
+        	hm.put(player, hm.getOrDefault(player, 0) + 1);        	
+        } // 맨 처음엔 1 , 그뒤 중복될땐 2,3, ... 이렇게 +1씩
+        for (String player : completion) {        	
+        	hm.put(player, hm.get(player) - 1);
+        } // -1 씩 됨 , 빠진 하나를 제외하고 0으로 됨
+
+        for (String key : hm.keySet()) {
+            if (hm.get(key) != 0){
+                answer = key;
+            }
+        }
+        return answer;
+    }
+    
+    /*
+     * 효율성에서 잘못된 풀이(배열 원소가 1000개 넘어가는 경우 )
+     */
+    public String solution03(String[] participant, String[] completion) {
       
     	String answer = "";
          
