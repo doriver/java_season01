@@ -23,7 +23,7 @@ public class Ex02 {
  * (중복 제외했을때 개수) 구하는게 KEY임
  */
 class Solution_1 {
-    public int solution(int[] nums) {
+    public int solution01(int[] nums) {
         int answer = 0;
         
         Set<Integer> set = new HashSet<>();     
@@ -39,6 +39,18 @@ class Solution_1 {
         }
 
         return answer;
+    }
+    
+    /*
+     * Map<key,value>에서 key들은 set과 같은 성질
+     */
+    public int solution02(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<Integer,Integer>();
+
+        for (int i = 0; i < nums.length; i++) map.put(nums[i], 1); 
+        								   // map.put(nums[i], map.getOrDefault(nums[i], 0) + 1));
+
+        return map.size() > nums.length / 2 ? nums.length / 2 : map.size();
     }
 }
 
