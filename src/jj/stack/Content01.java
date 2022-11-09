@@ -17,11 +17,11 @@ public class Content01 {
 		st.push(4);
 
 		// peek() 메소드를 이용한 요소의 반환(스택 맨위에 있는거 반환)
-		System.out.println(st.peek());
-		System.out.println(st);
+		System.out.println(st.peek()); // 4
+		System.out.println(st); // [1, 2, 3, 4]
 
 		// pop() 메소드를 이용한 요소의 반환 및 제거(스택 맨위에 있는거)
-		System.out.println(st.pop());
+		System.out.println(st.pop()); // 4
 		System.out.println(st); // [1, 2, 3]
 
 		// search() 메소드를 이용한 요소의 위치 검색 , 맨 위의 요소가 1(1부터 시작, 배열을 0부터 시작)

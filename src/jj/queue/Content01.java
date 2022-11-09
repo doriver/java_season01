@@ -18,12 +18,12 @@ public class Content01 {
 		qu.add("넷");
 
 		// peek() , 요소의 반환 ( 가장 빨리 저장된거 )
-		System.out.println(qu.peek());
-		System.out.println(qu);
+		System.out.println(qu.peek()); // 하나
+		System.out.println(qu); // [하나, 둘, 셋, 넷]
 
 		// poll() , 요소의 반환 및 제거 ( 가장 빨리 저장된거 )
-		System.out.println(qu.poll());
-		System.out.println(qu);
+		System.out.println(qu.poll()); // 하나
+		System.out.println(qu); // [둘, 셋, 넷]
 
 		// remove() , 요소의 반환 및 제거 ( 가장 빨리 저장된거 )
 		System.out.println(qu.remove());
