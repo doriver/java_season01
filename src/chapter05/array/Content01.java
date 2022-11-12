@@ -44,6 +44,10 @@ public class Content01 {
 		char[] chArr = {'a', 'b', 'c'};
 		System.out.println(chArr); // abc , println메서드는 char배열일때만 이렇게 동작
 		
+		int[] arr0 = {3, 2, 0, 1, 4};
+		Arrays.sort(arr0);
+		System.out.println(Arrays.toString(arr0)); // [0, 1, 2, 3, 4]
+
 		
 		
 	}
