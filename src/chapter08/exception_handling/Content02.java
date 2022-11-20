@@ -9,8 +9,8 @@ public class Content02 {
 			System.out.println(0/0);
 			System.out.println(2);	// 실행 안됨
 		} catch (ArithmeticException ae) {
-			ae.printStackTrace();
-			System.out.println("예외메시지 : " + ae.getMessage());
+			ae.printStackTrace(); // java.lang.ArithmeticException: / by zero
+			System.out.println("예외메시지 : " + ae.getMessage()); // 예외메시지 : / by zero
 		}
 	}
 
