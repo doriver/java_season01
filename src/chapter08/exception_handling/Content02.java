@@ -12,6 +12,13 @@ public class Content02 {
 			ae.printStackTrace(); // java.lang.ArithmeticException: / by zero
 			System.out.println("예외메시지 : " + ae.getMessage()); // 예외메시지 : / by zero
 		}
+		
+		try {
+			Exception e = new Exception("고의로 발생");
+			throw e;
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
 	}
-
 }
